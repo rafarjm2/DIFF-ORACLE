@@ -1,0 +1,8 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+config.ini
+Ambientes_Bancos_Dados.xlsx
+Controle_Atendimentos.xlsx

@@ -1,0 +1,26 @@
+# config.ini
+# Preencha com as credenciais reais e RENOMEIE para config.ini
+# (o .example fica de exemplo versionavel, sem senha real).
+#
+# dsn no formato host:porta/service_name  (o mesmo que aparece na tela
+# "Nome do Servico" do seu cliente Oracle) ou host:porta/sid se usar SID.
+
+[origem]
+user = seu_usuario
+password = sua_senha
+dsn = ecchxv1202-scan.pf.gov.br:1521/dpf06h.pf.gov.br
+label = prehomol
+
+[destino]
+user = seu_usuario
+password = sua_senha
+dsn = host-do-hmg:1521/servico_hmg
+label = homol
+
+[opcoes]
+# lista de schemas a comparar, separados por virgula
+schemas = ATURMA100,ATURMA100_AUDIT
+
+# se true, usa DBA_* (exige privilegio); se false, usa ALL_*
+# (funciona sem privilegio DBA, mas so mostra o que o usuario enxerga)
+usar_dba_views = true
